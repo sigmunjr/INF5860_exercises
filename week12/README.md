@@ -49,7 +49,7 @@ From the **week12** folder you can then run a **tensorboard server** with:
     
 If you open the url **localhost:6006** in you browser you can see the tensorboard, and it may look similar to this:
 
-![alt tag](https://www.google.no/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=0ahUKEwiw0NHhvLvTAhUhCpoKHZpzD9YQjRwIBw&url=https%3A%2F%2Fwookayin.github.io%2Ftensorflow-talk-debugging%2F&psig=AFQjCNGzrOUFbnPEITT83Ly9q-e8oNj5ww&ust=1493067701105496)
+![alt tag](https://wookayin.github.io/tensorflow-talk-debugging/images/tensorboard-01-loss.png)
 
 #### Make an activation summary in you *conv_layer* function
 In you *conv_layer* function you can visualize your activations with **tf.summary.histogram**
