@@ -1,11 +1,11 @@
 from __future__ import print_function
-import cPickle
+import _pickle as cPickle
 import numpy as np
 
 
 def load_cifar_file(path='../input/data_batch_1'):
-    data_file = open(path)
-    data_dict = cPickle.load(data_file)
+    data_file = open(path, 'rb')
+    data_dict = cPickle.load(data_file, encoding='latin-1')
 
     images = data_dict['data'].reshape((-1, 3, 32, 32)).transpose([0, 2, 3, 1])
     if 'fine_labels' in data_dict:
