@@ -1,5 +1,7 @@
 # INF5860 week 12
 
+Solutions can be found in [https://github.com/sigmunjr/INF5860_solutions](https://github.com/sigmunjr/INF5860_solutions)
+
 If you work on UiO computers you need to use the python interpreter */opt/ifi/anaconda2/bin/python* to use *tensorflow*, unless you have installed it yourself...
 
 ## Train a deeper network
