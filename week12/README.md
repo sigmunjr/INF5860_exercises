@@ -1,5 +1,9 @@
 # INF5860 week 12
 
+Solutions can be found in [https://github.com/sigmunjr/INF5860_solutions](https://github.com/sigmunjr/INF5860_solutions)
+
+If you work on UiO computers you need to use the python interpreter */opt/ifi/anaconda2/bin/python* to use *tensorflow*, unless you have installed it yourself...
+
 ## Train a deeper network
 Start with the code we wrote last week in *CNN.py*.
 
@@ -46,6 +50,11 @@ for i in range(100000):
 From the **week12** folder you can then run a **tensorboard server** with:
 
     $ tensorboard --logdir train/
+
+If you are on a UiO computer:
+
+    $ /opt/ifi/anaconda2/bin/tensorboard --logdir train/
+    
     
 If you open the url **localhost:6006** in you browser you can see the tensorboard, and it may look similar to this:
 
@@ -149,6 +158,16 @@ so you skip the last weight and bias. You can then restore the weights with:
 **OBS!** you still have to initialize the other variables, but don't initialize the restored values after *restore*,
 because then they are reset again...
 
-Then you can try and run your network, and hopefully see that you get a good result 80% acc ish...
+Then you can try and run your network, and hopefully see that you get a good result 80%+ acc.
+
+If you are tired of working with cifar10, you should try e.g. a flower dataset I have downloaded. Fetch it with on a UiO computer with:
+
+    cp /hom/sigmunjr/Public/flower_photos.tgz .
+    tar xzf flower_photos.tgz
+    
+Or from any other computer with:
+
+    curl -O http://download.tensorflow.org/example_images/flower_photos.tgz
+    tar xzf flower_photos.tgz
 
 #### Good luck!
