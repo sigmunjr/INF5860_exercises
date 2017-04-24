@@ -156,6 +156,16 @@ so you skip the last weight and bias. You can then restore the weights with:
 **OBS!** you still have to initialize the other variables, but don't initialize the restored values after *restore*,
 because then they are reset again...
 
-Then you can try and run your network, and hopefully see that you get a good result 80% acc ish...
+Then you can try and run your network, and hopefully see that you get a good result 80%+ acc.
+
+If you are tired of working with cifar10, you should try e.g. a flower dataset I have downloaded. Fetch it with on a UiO computer with:
+
+    cp /hom/sigmunjr/Public/flower_photos.tgz .
+    tar xzf flower_photos.tgz
+    
+Or from any other computer with:
+
+    curl -O http://download.tensorflow.org/example_images/flower_photos.tgz
+    tar xzf flower_photos.tgz
 
 #### Good luck!
