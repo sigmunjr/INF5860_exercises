@@ -1,5 +1,7 @@
 # INF5860 week 12
 
+If you work on UiO computers you need to use the python interpreter */opt/ifi/anaconda2/bin/python* to use *tensorflow*, unless you have installed it yourself...
+
 ## Train a deeper network
 Start with the code we wrote last week in *CNN.py*.
 
@@ -46,6 +48,11 @@ for i in range(100000):
 From the **week12** folder you can then run a **tensorboard server** with:
 
     $ tensorboard --logdir train/
+
+If you are on a UiO computer:
+
+    $ /opt/ifi/anaconda2/bin/tensorboard --logdir train/
+    
     
 If you open the url **localhost:6006** in you browser you can see the tensorboard, and it may look similar to this:
 
